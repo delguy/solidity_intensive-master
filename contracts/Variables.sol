@@ -3,6 +3,8 @@ pragma solidity ^0.8.0;
 
 import "hardhat/console.sol";
 
+
+
 // State variable with default value
 // Solidity will expose a "name()" function with public visibility
 contract Variables1 {

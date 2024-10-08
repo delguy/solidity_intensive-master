@@ -12,8 +12,8 @@ describe('Variables', () => {
   describe('Example 1', () => {
     it('it has a state variable with a default value', async () => {
       const Contract = await ethers.getContractFactory('Variables1')
-      let contract = await Contract.deploy()
-      expect(await contract.name()).to.equal('Example 1')
+      let contractInstance = await Contract.deploy()
+      expect(await contractInstance.name()).to.equal('Example 1')
     })
   })
 
@@ -90,7 +90,9 @@ describe('Variables', () => {
     it('demonstrates "block" global variable', async () => {
       let result = await contract.getBlockInfo()
       // Uncomment this to view return values in console
-      // console.log(result)
+      console.log(result)
     })
-  })
-})
+  });
+});
+  
+

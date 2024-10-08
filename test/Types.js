@@ -33,6 +33,7 @@ describe('Types', () => {
     it('demonstrates string and bytes types', async () => {
       expect(await contract.myString()).to.equal("My string");
       expect(await contract.myBytes32()).to.equal("0x4d79204279746573203332000000000000000000000000000000000000000000");
+      expect(await contract.myAddress()).to.equal('0x52bc44d5378309EE2abF1539BF71dE1b7d7bE3b5');
     })
   })
 })
